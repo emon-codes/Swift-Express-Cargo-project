@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
@@ -25,14 +26,14 @@
   <body>
     <section class="bg-[url(/img/image.png)] bg-no-repeat bg-cover w-auto">
       <div class="hero">
-        <div class="nav-containerr backdrop-blur-md">
+        <nav class="nav-containerr backdrop-blur-md">
           <div
             class="nav flex flex-row justify-between items-center py-2.5 container">
             <div class="logo">
               <img
                 src="/img/d796edc2799b9587a8542dc1cbc5a7b017fa1896.png"
                 alt=""
-                class="width-[100px] h-[52px]" />
+                class="w-[100px] h-[52px]" />
             </div>
             <div class="menu">
               <ul
@@ -56,8 +57,10 @@
               </button>
             </div>
           </div>
-        </div>
+        </nav>
+
         <!-- //////////////////////////////////////// -->
+
         <div
           class="content-container flex justify-between container items-center py-10 rounded-[50px]">
           <div class="arrow bg-white/20 p-4 rounded-full">
@@ -107,6 +110,8 @@
       </div>
     </section>
 
+    <!-- hero section complite -->
+
     <section>
       <div class="popula-Brand container gap-[32px] py-[90px]">
         <div class="flex flex-row justify-between items-center">
@@ -134,6 +139,7 @@
         </div>
       </div>
     </section>
+
     <section class="bg-[#F9FAFC]">
       <div class="container items-center flex flex-col gap-[32px] py-[50px]">
         <div class="content items-center text-center flex flex-col gap-[12px]">
@@ -146,7 +152,7 @@
 
         <div class="card flex flex-row items-center gap-[20px]">
           <div
-            class="card1 card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            class="card1 p-5 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
             <img src="/icon/Frame (3).png" alt="" />
             <h4 class="text-[20px] text-[#383636]">Security & Reliability</h4>
             <p class="text-[#606060]">
@@ -156,7 +162,7 @@
           </div>
 
           <div
-            class="card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            class="card2 p-5 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
             <img class="w-[54px] h-[54px]" src="/icon/Frame (1).png" alt="" />
             <h4 class="text-[20px] text-[#383636]">Security & Reliability</h4>
             <p class="text-[#606060]">
@@ -166,7 +172,7 @@
           </div>
 
           <div
-            class="card3 card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            class="card3 p-5 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
             <img src="/icon/Frame (2).png" alt="" />
             <h4 class="text-[20px] text-[##383636]">Security & Reliability</h4>
             <p class="text-[#606060]">
@@ -176,7 +182,7 @@
           </div>
 
           <div
-            class="card4 card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            class="card4 p-5 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
             <img src="/icon/Frame.png" alt="" />
             <h4 class="text-[20px] text-[#383636]">Security & Reliability</h4>
             <p class="text-[#606060]">
@@ -284,119 +290,383 @@
     <!-- Question section -->
 
     <section class="container">
-     
+      <div class="flex flex-col gap-[32px] h-auto w-auto">
+        <div class="content items-center text-center flex flex-col gap-[12px]">
+          <h2 class="text-[36px] font-[500]">Frequently asked question</h2>
+          <p class="text-[20px] font-[300] text-[#606060]">
+            Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
+            tempor orci tellus sollicitudin morbi. Duis
+          </p>
+        </div>
 
+        <div class="quation flex flex-row gap-[23px] mx-auto w-full">
+          <div class="Qu flex flex-col gap-[16px] m-auto h-auto w-[50%]">
+            <div
+              class="offer1 flex flex-col justify-start shadow-md bg-green-50 px-[32px] py-[20px]">
+              <div class="flex flex-row justify-between items-center">
+                <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
+                <span
+                  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-500"
+                  >-</span
+                >
+              </div>
+              <p class="text-[20px] font-[300] text-[#606060]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                pretium <br />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                faucibus.
+              </p>
+            </div>
 
-        <div class=" flex flex-col gap-[32px] h-auto w-auto">
-          <div
-            class="content items-center text-center flex flex-col gap-[12px]">
-            <h2 class="text-[36px] font-[500]">Frequently asked question</h2>
-            <p class="text-[20px] font-[300] text-[#606060]">
-              Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
-              tempor orci tellus sollicitudin morbi. Duis
+            <div
+              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
+                >Lorem ipsum dolor sit amet consectetur. <br />
+                Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
+                >+</span
+              >
+            </div>
+
+            <div
+              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
+                >Lorem ipsum dolor sit amet consectetur. <br />
+                Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
+                >+</span
+              >
+            </div>
+
+            <div
+              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
+                >Lorem ipsum dolor sit amet consectetur. <br />
+                Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
+                >+</span
+              >
+            </div>
+          </div>
+
+          <div class="answer flex flex-col gap-[16px] w-[50%]">
+            <div
+              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
+                >Lorem ipsum dolor sit amet consectetur. <br />
+                Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
+                >+</span
+              >
+            </div>
+
+            <div
+              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
+                >Lorem ipsum dolor sit amet consectetur. <br />
+                Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
+                >+</span
+              >
+            </div>
+
+            <div
+              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
+                >Lorem ipsum dolor sit amet consectetur. <br />
+                Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
+                >+</span
+              >
+            </div>
+
+            <div
+              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
+                >Lorem ipsum dolor sit amet consectetur. <br />
+                Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
+                >+</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="py-16 bg-gray-50">
+      <!-- Blog Section -->
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <div>
+            <h2 class="text-3xl font-semibold text-gray-800 mb-2">Our Blog</h2>
+            <p class="text-gray-500 text-sm">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+          <a
+            href="#"
+            class="text-green-500 text-sm border border-green-500 px-4 py-2 rounded-full hover:bg-green-50 transition"
+            >View All</a
+          >
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Blog Card -->
+          <div class="bg-white shadow-md rounded-lg relative">
+            <img
+              src="./blog image/Rectangle 2041.png"
+              alt="Blog Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Initial Consultation
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">
+                Schedule a meeting with our experienced legal team to discuss
+                your case and understand your needs.
+              </p>
+            </div>
+            <div class="text-center">
+              <button
+                href="#"
+                class="bg-gradient-to-r absolute -bottom-5 right-25 from-green-500 to-cyan-400 text-white px-[54px] py-[16px] rounded-md hover:opacity-50 transition">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg relative">
+            <img
+              src="./blog image/Rectangle 2042 (1).png"
+              alt="Blog Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Initial Consultation
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">
+                Schedule a meeting with our experienced legal team to discuss
+                your case and understand your needs.
+              </p>
+            </div>
+            <div class="text-center absolute -bottom-5 right-25">
+              <button
+                href="#"
+                class="bg-gradient-to-r from-green-500 to-cyan-400 text-white px-[54px] py-[16px] rounded-md hover:opacity-50 transition">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg relative">
+            <img
+              src="./blog image/Rectangle 2042.png"
+              alt="Blog Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Initial Consultation
+              </h3>
+              <p class="text-gray-500 text-sm mb-10">
+                Schedule a meeting with our experienced legal team to discuss
+                your case and understand your needs.
+              </p>
+            </div>
+            <div class="text-center">
+              <button
+                href="#"
+                class="bg-gradient-to-r from-green-500 to-cyan-400 absolute -bottom-5 right-25 text-white px-[54px] py-[16px] rounded-md hover:opacity-50 transition">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+          <div>
+            <h2 class="text-3xl font-semibold text-gray-800 mb-2">
+              Our Customer Feedback
+            </h2>
+            <p class="text-gray-500 text-sm">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feedback Card -->
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="./blog image/feedback img/Rectangle 729.png"
+                class="w-12 h-12 rounded-full mr-4" />
+              <div>
+                <h4 class="font-semibold text-gray-800">Floyd Miles</h4>
+                <div class="flex text-green-500">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>☆</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
 
-
-
-          <div class="quation  flex flex-row gap-[23px] mx-auto w-full">
-            <div class="Qu flex flex-col gap-[16px] m-auto h-auto w-[50%]">
-              <div class="offer1 flex flex-col justify-start shadow-md bg-green-50 px-[32px] py-[20px]">
-                <div class="flex flex-row justify-between items-center">
-                  <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
-                  <span
-                    class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-500"
-                    >-</span
-                  >
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="./blog image/feedback img/Rectangle 729 (2).png"
+                alt="Ronald"
+                class="w-12 h-12 rounded-full mr-4" />
+              <div>
+                <h4 class="font-semibold text-gray-800">Ronald Richards</h4>
+                <div class="flex text-green-500">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>☆</span>
                 </div>
-                <p class="text-[20px] font-[300] text-[#606060]">
-                  Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
-                  pretium <br />
-                  phasellus adipiscing faucibus ut nec vel. Pellentesque ac
-                  faucibus.
-                </p>
               </div>
-
-
-              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
-                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
-                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
-              </div>
-
-
-              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
-                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
-                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
-              </div>
-
-
-              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
-                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
-                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
-              </div>
-
-
-
-
-             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
-
-
-
-            <div class="answer flex flex-col gap-[16px] w-[50%] ">
-
-
-
-              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
-                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
-                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
-              </div>
-
-
-              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
-                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
-                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
-              </div>
-
-
-              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
-                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
-                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
-              </div>
-
-
-              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
-                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
-                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
-              </div>
-
-
-            </div>
-
-
-
+            <p class="text-gray-500 text-sm">
+              Ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.
+            </p>
           </div>
 
-
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="./blog image/feedback img/Rectangle 729 (1).png"
+                alt="Savannah"
+                class="w-12 h-12 rounded-full mr-4" />
+              <div>
+                <h4 class="font-semibold text-gray-800">Savannah Nguyen</h4>
+                <div class="flex text-green-500">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>☆</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat.
+            </p>
+          </div>
         </div>
-    
+      </div>
+    </section>
+
+    <section
+      class="bg-gradient-to-r from-lime-500 to-teal-500 w-auto p-16 rounded-3xl mx-auto container shadow-xl transform">
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Hassle-Free Shipping, Every Time
+        </h2>
+        <p class="text-base md:text-lg mb-8 max-w-2xl mx-auto">
+          Inscreva-se em nossa newsletter e tenha acesso exclusivo a conteúdos
+          educacionais, dicas de aprendizado de idiomas, atualizações sobre
+          novos cursos e promoções especiais.
+        </p>
+        <button
+          class="bg-blue-900 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out">
+          Sign Up For Free
+        </button>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <section class="bg-[#0B2A77] mt-10 ">
+      <footer class="footer flex flex-row container justify-between py-25">
+        <div class="fotter-content1 flex flex-col gap-2 max-w-[450px]">
+          <img
+            src="/img/d796edc2799b9587a8542dc1cbc5a7b017fa1896.png"
+            class="w-[100px] h-[52px]"
+            alt="" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, quia
+            culpa autem deleniti hic officiis debitis et error at repudiandae
+            natus asperiores iusto dolorum amet voluptatibus nobis possimus rem
+            distinctio.
+          </p>
+        </div>
+
+        <div class="fotter-content2 flex flex-col">
+          <h4 class="text-green-600 mb-4 text-sm">Support</h4>
+          <ul class="text-sm">
+            <li><a href="#" class="hover:text-white">FAQ</a></li>
+            <li><a href="#" class="hover:text-white">Return & Exchange</a></li>
+            <li><a href="#" class="hover:text-white">Shipping</a></li>
+            <li><a href="#" class="hover:text-white">Brand</a></li>
+            <li><a href="#" class="hover:text-white">Review</a></li>
+            <li><a href="#" class="hover:text-white">Help</a></li>
+          </ul>
+        </div>
+
+        <div class="fotter-content3 flex flex-col">
+          <h4 class="text-green-600 mb-4 text-sm">Company</h4>
+          <ul class="text-sm">
+            <li><a href="#" class="hover:text-white">Service</a></li>
+            <li><a href="#" class="hover:text-white">Restricted Items</a></li>
+            <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="fotter-content4">
+          <h4 class="ttext-green-600 mb-4 text-sm">Join a Newsletter</h4>
+          <div
+            class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="p-2 rounded-lg text-black focus:outline-none border bg-white border-white focus:ring-2 focus:ring-green-500 flex-grow" />
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out">
+              Subscribe
+            </button>
+          </div>
+          <div class="socail-icon flex flex-row mt-4 gap-2">
+            <i
+              class="fa-brands fa-facebook-f text-3xl text-white rounded-full bg-gradient-to-r from-lime-500 to-teal-500 py-1 px-2 aspect-square flex items-center justify-center"></i>
+            <i
+              class="fa-brands fa-instagram text-3xl text-white rounded-full bg-gradient-to-r from-lime-500 to-teal-500 py-1 px-1 aspect-square flex items-center justify-center"></i>
+            <i
+              class="fa-brands fa-twitter text-3xl text-white rounded-full bg-gradient-to-r from-lime-500 to-teal-500 py-1 px-1 aspect-square flex items-center justify-center"></i>
+          </div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>

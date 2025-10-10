@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <style>
       @theme {
         --color-primary: #cb5549;
@@ -23,7 +25,7 @@
   <body>
     <section class="bg-[url(/img/image.png)] bg-no-repeat bg-cover w-auto">
       <div class="hero">
-        <div class="nav-containerr backdrop-blur-md ">
+        <div class="nav-containerr backdrop-blur-md">
           <div
             class="nav flex flex-row justify-between items-center py-2.5 container">
             <div class="logo">
@@ -55,73 +57,346 @@
             </div>
           </div>
         </div>
-<!-- //////////////////////////////////////// -->
-        <div class="content-container flex justify-between container items-center py-[195px] rounded-[50px]">
-          <div class="arrow bg-white/20 p-4 rounded-full "><i class="fas fa-chevron-left"></i></div>
-          
-          
-          <div class="hero-content flex flex-col  items-center gap-[24px]">
+        <!-- //////////////////////////////////////// -->
+        <div
+          class="content-container flex justify-between container items-center py-10 rounded-[50px]">
+          <div class="arrow bg-white/20 p-4 rounded-full">
+            <i class="fas fa-chevron-left"></i>
+          </div>
 
+          <div class="hero-content flex flex-col items-center gap-[24px]">
             <div class="content">
-              <h2 class="max-w-xl text-center text-[68px] text-white"> Welcome to Swift Express Cargo</h2>          
-            <p class=" max-w-xl text-center text-[20px] text-white">Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor orci tellus sollicitudin morbi. Duis massa sit </p>
-            
+              <h2 class="max-w-xl text-center text-[68px] text-white">
+                Welcome to Swift Express Cargo
+              </h2>
+              <p class="max-w-xl text-center text-[20px] text-white">
+                Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor
+                orci tellus sollicitudin morbi. Duis massa sit
+              </p>
             </div>
-            <div class="searchbar flex flex-row bg-white/20 justify-between w-[510px] py-1 px-[10px] items-center rounded-[38px]">
-
-            <input type="text" placeholder="Tracking Number" class="focus:outline-none">
-            <button class=" py-2 px-[26px] bg-gradient-to-r from-[#4CAF50] to-[#26C6DA] text-white font-[700] rounded-[38px]">Track Now</button>
-
+            <div
+              class="searchbar flex flex-row bg-white/20 justify-between w-[510px] py-1 px-[10px] items-center rounded-[38px]">
+              <input
+                type="text"
+                placeholder="Tracking Number"
+                class="focus:outline-none" />
+              <button
+                class="py-2 px-[26px] bg-gradient-to-r from-[#4CAF50] to-[#26C6DA] text-white font-[700] rounded-[38px]">
+                Track Now
+              </button>
+            </div>
           </div>
+
+          <div class="arrow bg-white/20 p-4 rounded-full">
+            <i class="fas fa-chevron-right"></i>
           </div>
-  
-          <div class="arrow bg-white/20 p-4 rounded-full "><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="flex justify-between items-center py-[50px] text-center">
+          <div></div>
+          <div class="pt-[50px] flex gap-2">
+            <span class="w-3 h-1.5 bg-green-500 rounded-full"></span>
+            <span class="w-3 h-1.5 bg-green-300 rounded-full"></span>
+            <span class="w-3 h-1.5 bg-green-300 rounded-full"></span>
+          </div>
+          <div
+            class="rounded-full h-[60px] w-[60px] bg-green-500 flex justify-center text-center items-center mr-10">
+            <i
+              class="fa-brands fa-whatsapp bg-white rounded-full text-[35px] py-1"></i>
+          </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="popula-Brand container gap-[32px] py-5">
 
+    <section>
+      <div class="popula-Brand container gap-[32px] py-[90px]">
         <div class="flex flex-row justify-between items-center">
           <h3 class="text-[36px] text-black font-[700]">Popular Brands</h3>
           <div class="icon flex gap-[10px]">
-            <div class="arrow bg-gradient-to-r from-[#4CAF50] to-[#26C6DA] p-2 rounded-full "><i class="fas fa-chevron-left"></i></div>
-            <div class="arrow bg-gradient-to-r from-[#4CAF50] to-[#26C6DA] p-2 rounded-full"><i class="fas fa-chevron-right"></i></div>
+            <div
+              class="arrow bg-gradient-to-r from-[#4CAF50] to-[#26C6DA] p-2 rounded-full">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div
+              class="arrow bg-gradient-to-r from-[#4CAF50] to-[#26C6DA] p-2 rounded-full">
+              <i class="fas fa-chevron-right"></i>
+            </div>
           </div>
         </div>
 
-        <div class="brand-names flex flex-row ">
-          <img class="w-[180px] h-[153px]" src="./brand-img/1.png" alt="">
-          <img class="w-[180px] h-[153px]"  src="./brand-img/2.png" alt="">
-          <img class="w-[180px] h-[153px]"  src="./brand-img/3.png" alt="">
-          <img class="w-[180px] h-[153px]"  src="./brand-img/4.png" alt="">
-          <img class="w-[180px] h-[153px]"  src="./brand-img/5.png" alt="">
-          <img class="w-[180px] h-[153px]"  src="./brand-img/6.png" alt="">
-          <img class="w-[180px] h-[153px]"  src="./brand-img/7.png" alt="">
+        <div class="brand-names flex flex-row">
+          <img class="w-[180px] h-[153px]" src="./brand-img/1.png" alt="" />
+          <img class="w-[180px] h-[153px]" src="./brand-img/2.png" alt="" />
+          <img class="w-[180px] h-[153px]" src="./brand-img/3.png" alt="" />
+          <img class="w-[180px] h-[153px]" src="./brand-img/4.png" alt="" />
+          <img class="w-[180px] h-[153px]" src="./brand-img/5.png" alt="" />
+          <img class="w-[180px] h-[153px]" src="./brand-img/6.png" alt="" />
+          <img class="w-[180px] h-[153px]" src="./brand-img/7.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#F9FAFC]">
+      <div class="container items-center flex flex-col gap-[32px] py-[50px]">
+        <div class="content items-center text-center flex flex-col gap-[12px]">
+          <h2 class="text-[36px] font-[500]">Why Choose Us</h2>
+          <p class="text-[20px] font-[300] text-[#606060]">
+            Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
+            tempor orci tellus sollicitudin morbi. Duis
+          </p>
+        </div>
+
+        <div class="card flex flex-row items-center gap-[20px]">
+          <div
+            class="card1 card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            <img src="/icon/Frame (3).png" alt="" />
+            <h4 class="text-[20px] text-[#383636]">Security & Reliability</h4>
+            <p class="text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis
+              blandit fermentum id. Sagittis eu egestas
+            </p>
+          </div>
+
+          <div
+            class="card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            <img class="w-[54px] h-[54px]" src="/icon/Frame (1).png" alt="" />
+            <h4 class="text-[20px] text-[#383636]">Security & Reliability</h4>
+            <p class="text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis
+              blandit fermentum id. Sagittis eu egestas
+            </p>
+          </div>
+
+          <div
+            class="card3 card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            <img src="/icon/Frame (2).png" alt="" />
+            <h4 class="text-[20px] text-[##383636]">Security & Reliability</h4>
+            <p class="text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis
+              blandit fermentum id. Sagittis eu egestas
+            </p>
+          </div>
+
+          <div
+            class="card4 card2 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]">
+            <img src="/icon/Frame.png" alt="" />
+            <h4 class="text-[20px] text-[#383636]">Security & Reliability</h4>
+            <p class="text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis
+              blandit fermentum id. Sagittis eu egestas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work section -->
+
+    <section>
+      <div class="container flex flex-col gap-[32px] py-[70px] relative">
+        <div class="content items-center text-center flex flex-col gap-[12px]">
+          <h2 class="text-[36px] font-[500]">How It Work</h2>
+          <p class="text-[20px] font-[300] text-[#606060]">
+            Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
+            tempor orci tellus sollicitudin morbi. Duis
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-[24px]">
+          <div
+            class="offers-content1 flex flex-row gap-[33px] border-b border-[#C0C0C0]">
+            <div class="number">
+              <span
+                class="text-[32px] flex bg-green-500 rounded-full px-10 py-7 items-center text-white"
+                >1.</span
+              >
+            </div>
+            <div class="offer flex flex-col justify-start">
+              <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
+              <p class="text-[20px] font-[300] text-[#606060]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                pretium <br />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                faucibus.
+              </p>
+            </div>
+          </div>
+          <div
+            class="offers-content1 flex flex-row gap-[33px] border-b border-[#C0C0C0]">
+            <div class="number">
+              <span
+                class="text-[32px] flex bg-green-500 rounded-full px-10 py-7 items-center text-white"
+                >1.</span
+              >
+            </div>
+            <div class="offer flex flex-col justify-start">
+              <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
+              <p class="text-[20px] font-[300] text-[#606060]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                pretium <br />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                faucibus.
+              </p>
+            </div>
+          </div>
+          <div
+            class="offers-content1 flex flex-row gap-[33px] border-b border-[#C0C0C0]">
+            <div class="number">
+              <span
+                class="text-[32px] flex bg-green-500 rounded-full px-10 py-7 items-center text-white"
+                >1.</span
+              >
+            </div>
+            <div class="offer flex flex-col justify-start">
+              <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
+              <p class="text-[20px] font-[300] text-[#606060]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                pretium <br />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                faucibus.
+              </p>
+            </div>
+          </div>
+          <div
+            class="offers-content1 flex flex-row gap-[33px] border-b border-[#C0C0C0]">
+            <div class="number">
+              <span
+                class="text-[32px] flex bg-green-500 rounded-full px-10 py-7 items-center text-white"
+                >1.</span
+              >
+            </div>
+            <div class="offer flex flex-col justify-start">
+              <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
+              <p class="text-[20px] font-[300] text-[#606060]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                pretium <br />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                faucibus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="img absolute right-5 bottom-11">
+          <img src="/img/absulate.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Question section -->
+
+    <section class="container">
+     
+
+
+        <div class=" flex flex-col gap-[32px] h-auto w-auto">
+          <div
+            class="content items-center text-center flex flex-col gap-[12px]">
+            <h2 class="text-[36px] font-[500]">Frequently asked question</h2>
+            <p class="text-[20px] font-[300] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
+              tempor orci tellus sollicitudin morbi. Duis
+            </p>
+          </div>
+
+
+
+          <div class="quation  flex flex-row gap-[23px] mx-auto w-full">
+            <div class="Qu flex flex-col gap-[16px] m-auto h-auto w-[50%]">
+              <div class="offer1 flex flex-col justify-start shadow-md bg-green-50 px-[32px] py-[20px]">
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
+                  <span
+                    class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-500"
+                    >-</span
+                  >
+                </div>
+                <p class="text-[20px] font-[300] text-[#606060]">
+                  Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                  pretium <br />
+                  phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                  faucibus.
+                </p>
+              </div>
+
+
+              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
+                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
+              </div>
+
+
+              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
+                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
+              </div>
+
+
+              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
+                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
+              </div>
+
+
+
+
+             
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="answer flex flex-col gap-[16px] w-[50%] ">
+
+
+
+              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
+                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
+              </div>
+
+
+              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
+                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
+              </div>
+
+
+              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
+                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
+              </div>
+
+
+              <div class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]">
+                <span class="text-[24px] tracking-[0] font-[500]  text-[#606060]">Lorem ipsum dolor sit amet consectetur. <br> Sit amet pellentesque id at eget?</span>
+                <span  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100 ">+</span>
+              </div>
+
+
+            </div>
+
+
+
+          </div>
 
 
         </div>
-
-
-
-
-
-
-      </div>
-
+    
     </section>
-
-
-
-
-
-
-
   </body>
 </html>

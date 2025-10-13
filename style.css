@@ -1,0 +1,13 @@
+ @theme {
+        --color-primary: #cb5549;
+        --color-secondary: #968b7c;
+        --color-accent: #cc1609;
+      }
+      .container {
+        width: 1320px;
+        height: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin: auto;
+      }
+    

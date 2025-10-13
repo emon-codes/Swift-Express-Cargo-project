@@ -3,21 +3,26 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # অথবা তুমি যেই branch deploy করতে চাও
+      - main  # main branch-এ push হলে workflow trigger হবে
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # Step 1: Checkout code
       - uses: actions/checkout@v3
 
+      # Step 2: Setup GitHub Pages
       - name: Setup Pages
         uses: actions/setup-pages@v3
 
+      # Step 3: Upload artifact from root folder
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './'  # Root folder থেকে build করবে
+          path: './'   # <-- Root folder থেকে build হবে
 
+      # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1

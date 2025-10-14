@@ -5,24 +5,33 @@ on:
     branches:
       - main  # main branch-এ push হলে workflow trigger হবে
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
     steps:
       # Step 1: Checkout code
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      # Step 2: Setup GitHub Pages
-      - name: Setup Pages
-        uses: actions/setup-pages@v3
+      # Step 2: Setup Pages
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
 
       # Step 3: Upload artifact from root folder
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: './'   # <-- Root folder থেকে build হবে
+          path: ./  # <-- root folder থেকে build হবে
 
       # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        id: deployment
+        uses: actions/deploy-pages@v4

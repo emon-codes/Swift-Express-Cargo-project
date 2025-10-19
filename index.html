@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section class="bg-[url(./img/image.png)] bg-no-repeat bg-cover w-auto">
+    <section class="bg-[url(./img/image.png)]  bg-no-repeat bg-cover w-auto">
       <div class="hero">
+        <div class="nav bg-[url(./img/image.png)] bg-no-repeat bg-cover fixed  w-full">
         <nav class="nav-containerr backdrop-blur-md">
           <div
-            class="nav flex flex-row justify-between items-center py-2.5 container"
+            class="nav flex flex-row justify-between items-center py-3 container "
           >
             <div class="logo">
               <img
@@ -31,7 +32,7 @@
             </div>
             <div class="menu">
               <ul
-                class="flex flex-row gap-[44px] list-none text-[16px] font-[500]"
+                class="flex flex-row gap-[44px] list-none text-[16px] font-[800]"
               >
                 <li><a class="no-underline text-green-500" href="./index.html">Home</a></li>
                 <li>
@@ -86,11 +87,12 @@
             </div>
           </div>
         </nav>
-
-        <!-- //////////////////////////////////////// -->
+      </div>
+        
+      <!-- //////////////////////////////////////// -->
 
         <div
-          class="content-container flex justify-between container items-center py-10 rounded-[50px]"
+          class="content-container flex justify-between container items-center py-50 rounded-[50px]"
         >
           <div class="arrow bg-white/20 p-4 rounded-full">
             <i class="fas fa-chevron-left"></i>
@@ -164,7 +166,7 @@
           </div>
         </div>
 
-        <div class="brand-names flex flex-row">
+        <div class="brand-names flex flex-col md:flex-row">
           <img class="w-[180px] h-[153px]" src="./brand-img/1.png" alt="" />
           <img class="w-[180px] h-[153px]" src="./brand-img/2.png" alt="" />
           <img class="w-[180px] h-[153px]" src="./brand-img/3.png" alt="" />
@@ -186,7 +188,7 @@
           </p>
         </div>
 
-        <div class="card flex flex-row items-center gap-[20px]">
+        <div class="card flex flex-col md:flex-row items-center gap-[20px]">
           <div
             class="card1 p-5 items-center border text-center flex flex-col shadow bg-[#F0F7F6] rounded-[10px] gap-[10px]"
           >
@@ -333,132 +335,136 @@
 
     <!-- Question section -->
 
-    <section class="container">
-      <div class="flex flex-col gap-[32px] h-auto w-auto">
-        <div class="content items-center text-center flex flex-col gap-[12px]">
-          <h2 class="text-[36px] font-[500]">Frequently asked question</h2>
-          <p class="text-[20px] font-[300] text-[#606060]">
-            Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
-            tempor orci tellus sollicitudin morbi. Duis
+    <section class="container" id="faq">
+  <div class="flex flex-col gap-[32px] h-auto w-auto">
+    <div class="content items-center text-center flex flex-col gap-[12px]">
+      <h2 class="text-[36px] font-[500]">Frequently asked question</h2>
+      <p class="text-[20px] font-[300] text-[#606060]">
+        Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
+        tempor orci tellus sollicitudin morbi. Duis
+      </p>
+    </div>
+
+    <div class="quation flex flex-col md:flex-row gap-[23px] mx-auto w-full">
+      <div class="Qu flex flex-col gap-[16px] m-auto h-auto w-[50%]">
+
+        <!-- Offer 1 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[20px] rounded ">
+          <div class="faq-header flex justify-between items-center cursor-pointer ">
+            <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-500 text-white">-</span>
+          </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 transition-all duration-500 ease-in-out">
+            Lorem ipsum dolor sit amet consectetur. Parturient mattis mi pretium
+            phasellus adipiscing faucibus ut nec vel. Pellentesque ac faucibus.
           </p>
         </div>
 
-        <div class="quation flex flex-row gap-[23px] mx-auto w-full">
-          <div class="Qu flex flex-col gap-[16px] m-auto h-auto w-[50%]">
-            <div
-              class="offer1 flex flex-col justify-start shadow-md bg-green-50 px-[32px] py-[20px]"
-            >
-              <div class="flex flex-row justify-between items-center">
-                <h3 class="text-[#6DA015] text-[32px]">Free Sign Up</h3>
-                <span
-                  class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-500"
-                  >-</span
-                >
-              </div>
-              <p class="text-[20px] font-[300] text-[#606060]">
-                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
-                pretium <br />
-                phasellus adipiscing faucibus ut nec vel. Pellentesque ac
-                faucibus.
-              </p>
-            </div>
-
-            <div
-              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]"
-            >
-              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
-                >Lorem ipsum dolor sit amet consectetur. <br />
-                Sit amet pellentesque id at eget?</span
-              >
-              <span
-                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
-                >+</span
-              >
-            </div>
-
-            <div
-              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]"
-            >
-              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
-                >Lorem ipsum dolor sit amet consectetur. <br />
-                Sit amet pellentesque id at eget?</span
-              >
-              <span
-                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
-                >+</span
-              >
-            </div>
-
-            <div
-              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]"
-            >
-              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
-                >Lorem ipsum dolor sit amet consectetur. <br />
-                Sit amet pellentesque id at eget?</span
-              >
-              <span
-                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
-                >+</span
-              >
-            </div>
+        <!-- Offer 2 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[40px] rounded">
+          <div class="faq-header flex justify-between items-center cursor-pointer">
+            <span class="text-[24px] font-[500] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. <br />
+              Sit amet pellentesque id at eget?
+            </span>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-100">+</span>
           </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 hidden">
+            Lorem ipsum dolor sit amet consectetur. Faucibus ut nec vel.
+          </p>
+        </div>
 
-          <div class="answer flex flex-col gap-[16px] w-[50%]">
-            <div
-              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]"
-            >
-              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
-                >Lorem ipsum dolor sit amet consectetur. <br />
-                Sit amet pellentesque id at eget?</span
-              >
-              <span
-                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
-                >+</span
-              >
-            </div>
-
-            <div
-              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]"
-            >
-              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
-                >Lorem ipsum dolor sit amet consectetur. <br />
-                Sit amet pellentesque id at eget?</span
-              >
-              <span
-                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
-                >+</span
-              >
-            </div>
-
-            <div
-              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]"
-            >
-              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
-                >Lorem ipsum dolor sit amet consectetur. <br />
-                Sit amet pellentesque id at eget?</span
-              >
-              <span
-                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
-                >+</span
-              >
-            </div>
-
-            <div
-              class="offer2 flex flex-row items-center justify-between shadow-md bg-green-50 px-[32px] py-[40px]"
-            >
-              <span class="text-[24px] tracking-[0] font-[500] text-[#606060]"
-                >Lorem ipsum dolor sit amet consectetur. <br />
-                Sit amet pellentesque id at eget?</span
-              >
-              <span
-                class="text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 aspect-square bg-green-100"
-                >+</span
-              >
-            </div>
+        <!-- Offer 3 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[40px] rounded">
+          <div class="faq-header flex justify-between items-center cursor-pointer">
+            <span class="text-[24px] font-[500] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. <br />
+              Sit amet pellentesque id at eget?
+            </span>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-100">+</span>
           </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 hidden">
+            Lorem ipsum dolor sit amet consectetur. Faucibus ut nec vel.
+          </p>
+        </div>
+
+        <!-- Offer 4 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[40px] rounded">
+          <div class="faq-header flex justify-between items-center cursor-pointer">
+            <span class="text-[24px] font-[500] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. <br />
+              Sit amet pellentesque id at eget?
+            </span>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-100">+</span>
+          </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 hidden">
+            Lorem ipsum dolor sit amet consectetur. Faucibus ut nec vel.
+          </p>
         </div>
       </div>
-    </section>
+
+      <!-- Right Side Answers -->
+      <div class="answer flex flex-col gap-[16px] w-[50%]">
+
+        <!-- Answer 1 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[40px] rounded">
+          <div class="faq-header flex justify-between items-center cursor-pointer">
+            <span class="text-[24px] font-[500] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. <br />
+              Sit amet pellentesque id at eget?
+            </span>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-100">+</span>
+          </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 hidden">
+            Lorem ipsum dolor sit amet consectetur. Faucibus ut nec vel.
+          </p>
+        </div>
+
+        <!-- Answer 2 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[40px] rounded">
+          <div class="faq-header flex justify-between items-center cursor-pointer">
+            <span class="text-[24px] font-[500] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. <br />
+              Sit amet pellentesque id at eget?
+            </span>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-100">+</span>
+          </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 hidden">
+            Lorem ipsum dolor sit amet consectetur. Faucibus ut nec vel.
+          </p>
+        </div>
+
+        <!-- Answer 3 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[40px] rounded">
+          <div class="faq-header flex justify-between items-center cursor-pointer">
+            <span class="text-[24px] font-[500] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. <br />
+              Sit amet pellentesque id at eget?
+            </span>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-100">+</span>
+          </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 hidden">
+            Lorem ipsum dolor sit amet consectetur. Faucibus ut nec vel.
+          </p>
+        </div>
+
+        <!-- Answer 4 -->
+        <div class="faq-item shadow-md bg-green-50 px-[32px] py-[40px] rounded">
+          <div class="faq-header flex justify-between items-center cursor-pointer">
+            <span class="text-[24px] font-[500] text-[#606060]">
+              Lorem ipsum dolor sit amet consectetur. <br />
+              Sit amet pellentesque id at eget?
+            </span>
+            <span class="faq-toggle text-[30px] flex justify-center items-center rounded p-5 w-5 h-5 bg-green-100">+</span>
+          </div>
+          <p class="faq-content text-[20px] font-[300] text-[#606060] mt-2 hidden">
+            Lorem ipsum dolor sit amet consectetur. Faucibus ut nec vel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- //////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -594,7 +600,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container">
+        <div class="flex flex-col md:flex-row gap-8 container">
           <!-- Feedback Card -->
           <div class=" ">
             <div class="bg-white shadow-md rounded-lg px-6 pb-30">
@@ -788,5 +794,8 @@
         </div>
       </footer>
     </section>
+    <script src="./script.js">
+  
+</script>
   </body>
 </html>
